@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARDARD FORM</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            height: 500px;
+            width: 450px;
+            margin: 2.5% 30%;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="form.php" method="post">
+        <fieldset>
+            <legend>PHP FORM</legend>
+            <label for="um">Username: </label>
+            <input type="text" id="um" name="uname"><br><br>
+            <label for="ps">Password: </label>
+            <input type="password" id="ps" name="pswd"><br><br>
+            <label for="wb">Website: </label>
+            <input type="text" id="wb" name="web"><br><br>
+            <label for="gn">Gender:</label>
+            <input type="radio" id="gn" name="gen" value="male">Male&ensp;
+            <input type="radio" id="gn" name="gen" value="female">Female<br><br>
+            <label for="cr">Courses:</label>
+            English <input type="checkbox" id="cr" name="course[]" value="english">&ensp;
+            Programming <input type="checkbox" id="cr" name="course[]" value="Programming">&ensp;
+            Physics <input type="checkbox" id="cr" name="course[]" value="Physics"><br><br>
+            <label for="stg">Stage:</label>
+            <select name="stage" id="stg">
+                <option value="biginner">Biginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="expert">Expert</option>
+            </select><br><br>
+            <label for="ct">Comment:</label><br>
+            <textarea name="cmnt" id="ct" cols="60" rows="10"></textarea><br>
+            <input type="submit" name="sub" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
